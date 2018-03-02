@@ -42,7 +42,7 @@ public class UserController {
     public void showInfo(){
         this.discoveryClient.getServices().forEach(id -> {
             discoveryClient.getInstances(id).forEach(instance -> {
-                log.info("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
+                log.debug("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
             });
         });
     }
