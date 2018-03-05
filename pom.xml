@@ -13,6 +13,7 @@
 		<module>provider-user</module>
 		<module>comsumer</module>
 		<module>dashboard</module>
+		<module>gateway</module>
 	</modules>
 
 	<parent>

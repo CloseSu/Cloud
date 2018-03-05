@@ -2,7 +2,7 @@ server:
   port: 9802
 spring:
   application:
-    name: cunsumer
+    name: consumer
 eureka:
   client:
     healthcheck:
