@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class ErtestServiceImpl implements ErtestService {
 
     @Override
-    public void nullPointTest() throws NullPointerException {
+    public void nullPointTest() {
 	throw new NullPointerException();
     }
 }
