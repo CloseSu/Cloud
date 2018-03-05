@@ -2,6 +2,7 @@ package com.cloud.provideruser.controller;
 
 import com.cloud.provideruser.dao.UserDao;
 import com.cloud.provideruser.entity.User;
+import com.cloud.provideruser.service.ErtestService;
 import com.netflix.appinfo.InstanceInfo;
 import com.netflix.discovery.EurekaClient;
 import lombok.extern.slf4j.Slf4j;
@@ -26,6 +27,9 @@ public class UserController {
     @Autowired
     private DiscoveryClient discoveryClient;
 
+    @Autowired
+    private ErtestService ertestService;
+
     @GetMapping("/user/{id}")
     public User findById(@PathVariable Long id) {
 	return this.userDao.findOne(id);
@@ -45,6 +49,11 @@ public class UserController {
                 log.debug("/hello, host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
             });
         });
+    }
+
+    @GetMapping("/test-NPE")
+    public void testNPE(){
+        this.ertestService.nullPointTest();
     }
 
 }
