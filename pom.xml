@@ -11,6 +11,7 @@
 	<modules>
 		<module>discovery-eureka</module>
 		<module>provider-user</module>
+		<module>comsumer</module>
 	</modules>
 
 	<parent>
