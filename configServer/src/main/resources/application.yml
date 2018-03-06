@@ -1,0 +1,16 @@
+server:
+  port: 9809
+spring:
+  application:
+    name: configServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/CloseSu/cloudConfig.git
+          username:
+          password:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9876/eureka/
