@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: turbine
+server:
+  port: 9808
+security:
+  basic:
+    enabled: false
+turbine:
+  aggregator:
+    clusterConfig: default
+  appConfig: CONSUMER,CONSUMER2
+  clusterNameExpression: new String("default")
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9876/eureka/

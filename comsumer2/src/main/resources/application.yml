@@ -1,8 +1,8 @@
 server:
-  port: 9802
+  port: 9807
 spring:
   application:
-    name: consumer
+    name: consumer2
 eureka:
   client:
     healthcheck:
