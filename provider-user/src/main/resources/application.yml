@@ -12,6 +12,11 @@ spring:
     data: classpath:data.sql
   application:
     name: provider-user
+  zipkin:
+    base-url: http://localhost:9812
+  sleuth:
+    sampler:
+      percentage: 1.0
 eureka:
   client:
     healthcheck:

@@ -14,7 +14,7 @@ public class ConsumerController {
     @Autowired
     private UserFiegnClient userFiegnClient;
 
-    @GetMapping("/consumer/{id}")
+    @GetMapping("/consumer2/{id}")
     public User findById(@PathVariable Long id){
         return this.userFiegnClient.findById(id);
     }

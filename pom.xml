@@ -17,13 +17,14 @@
 		<module>turbine</module>
 		<module>configserver</module>
 		<module>configclient</module>
+		<module>adminserver</module>
 	</modules>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.9.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>1.5.10.RELEASE</version>
+		<relativePath/>
 	</parent>
 
 	<properties>
